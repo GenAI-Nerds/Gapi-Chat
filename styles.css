@@ -1,0 +1,291 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  background-color: #082B5E;
+  color: #ffffff;
+}
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+input[type="text"] {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+
+}
+
+.header-text {
+  font-size: 1rem;
+  line-size: 1rem;
+}
+
+.tag {
+  margin-bottom: 1rem;  
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+  font-style: italic;
+}
+
+.main-container {
+  
+}
+
+.animation {
+  height: 15rem;
+}
+
+.logo-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-logo {
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.bottom-logo {
+  margin-top: 1rem;
+  left: calc(50% - 50px);
+  text-align: center;
+  z-index: 9;
+}
+
+.welcome-prompt {
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.instructions1 {
+  display: flex;
+  justify-content: center;
+  color: #F7FF58;
+  padding-top: 0rem;
+  font-size: 2.75rem;
+  line-height: 2.75rem;
+  font-style: italic;
+}
+
+.instructions2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
+
+.whatYouCanDo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #F7FF58;
+  padding-top: 0.5rem;
+  font-size: 1.75rem;
+  line-height: 2rem;
+}
+
+.button-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.25rem;
+}
+
+.instruction-container {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  display: flex;
+  justify-content: center;  
+}
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.profile-left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-right-side {
+  display: flex;
+  justify-content: center;
+}
+
+.chat {
+  background: #b5b4b4;
+  color: #1a1a1a;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.profile-text-container {
+  display: flex;
+  justify-content: center;  
+}
+
+.profile-text {
+  color: #ffffff;
+  line-height: 4rem;
+  font-size: 4rem;
+}
+
+.client-button {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 2px solid #1a1a1a;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+  width: 30rem;
+}
+
+.client-button:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.client-button:hover {
+  cursor: pointer;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.statusHolder {
+  display: flex;
+  margin-top: 2rem;
+}
+
+#logContainer {
+margin-left: 2rem;
+}
+
+.text-box-container {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 2rem;
+}
+
+.text-box-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.text-box-label {
+  font-size: 0.8rem;
+  color: #ffffff;
+  text-align: right;
+  width: 12rem;
+}
+
+.text-box {
+  width: 20rem;
+}
+
+.instruction {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.chat-input-container {
+  display: flex;
+  justify-content: center;    
+  padding-top: 1rem;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  border: 1px solid grey;
+  width: 50rem;
+  min-height: 20rem;
+  margin: auto;
+  padding: 1rem;
+}
+
+.chat-item {
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  margin-top: 0.6rem;
+  padding: 0.25rem;
+  color: #1a1a1a;
+  background-color: #717487;
+  margin-left: 10rem;
+}
+
+.prompt-item {
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  margin-top: 0.6rem;
+  padding: 0.25rem;
+  color: #1a1a1a;
+  background-color: gray;
+  margin-right: 10rem;
+}
+
+.chat-textbox {
+  width: 50rem;
+  height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  padding-left: 0.5rem;
+}
+
+.connected-label {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

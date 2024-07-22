@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Gapi Use Case: Chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="onLoad()">
+
+  <div class="main-container">
+    <div class="logo-container">
+      <div class="bottom-logo">
+        <img class="main-logo"src="logo.png" width="100px" height="100px"/>
+      </div>
+    </div>
+
+    <div class="welcome-prompt">
+      Chat
+    </div>
+
+    <div id="connected-label" class="connected-label">
+    </div>
+    <!--
+    <div class="button-holder">
+      <input id="start-button" type="button" value="Connect" class="client-button"
+        style="width: 15rem; padding-top: 0.25rem; padding-bottom: 0.25rem;"
+        onclick="toggleFlow()"
+      >
+    </div>
+    -->
+    
+    <div id="chat-container" class="chat-container">
+    </div>
+    <div class="chat-input-container">
+      <input type="text" id="prompt-box" value="What do people think monkey's eat?" placeholder="" class="chat-textbox">
+    </div>
+    <div class="chat-input-container" style="padding-top: 0.25rem;">
+    
+      <input id="start-button" type="button" value="Send" class="client-button"
+        style="width: 10rem; padding-top: 0.25rem; padding-bottom: 0.25rem;"
+        onclick="postPrompt()"
+      >      
+    </div>
+
+    <br><br>
+    <hr style="margin-left: 1rem; margin-right: 1rem;">
+    <div class="text-box-container">
+      <div class="text-box-row">
+        <div class="text-box-label">
+          Gapi Url:
+        </div>
+        <div class="text-box">
+          <input type="text" id="gapiUrl" value="ws://localhost:8090/gapi-ws">
+        </div>
+      </div>
+      <div class="text-box-row">
+        <div class="text-box-label">
+          Gapi Key:
+        </div>
+        <div class="text-box">
+          <input type="text" id="gapiKey">
+        </div>
+      </div>
+      <div class="text-box-row">
+        <div class="text-box-label">
+          Workflow Key:
+        </div>
+        <div class="text-box">
+          <input type="text" id="workflowKey">
+        </div>
+      </div>
+      <div class="text-box-row">
+        <div class="text-box-label">
+          GenAI Node Key:
+        </div>
+        <div class="text-box">
+          <input type="text" id="nodeKey">
+        </div>
+      </div>
+      <div class="text-box-row">
+        <div class="text-box-label">
+          Micro Service Key
+        </div>
+        <div class="text-box">
+          <input type="text" id="microServiceKey">
+        </div>
+      </div>      
+    </div>
+    
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
